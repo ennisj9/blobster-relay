@@ -1,0 +1,14 @@
+services:
+  relay:
+    build:
+      context: .
+      dockerfile: ./docker/blobster-relay.dockerfile
+    ports:
+      - "8109:8109"
+  test:
+    build:
+      context: .
+      dockerfile: ./docker/relay-test.dockerfile
+    command: npm run test
+    environment:
+      - BLOBSTER_HOST=http://relay:8108

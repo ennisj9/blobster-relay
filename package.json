@@ -1,0 +1,19 @@
+{
+  "name": "blobster-relay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "relay": "node ./src/index.js",
+    "test": "node ./test/index.js"
+  },
+  "author": "Joe Ennis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sockjs": "^0.3.21"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
+}
