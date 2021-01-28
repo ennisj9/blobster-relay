@@ -1,10 +1,8 @@
 services:
   relay:
-    build:
-      context: .
-      dockerfile: ./docker/blobster-relay.dockerfile
+    image: ennisj/blobster-relay
     ports:
-      - "8109:8109"
+      - 8109:8109
   test:
     build:
       context: .
