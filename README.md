@@ -24,3 +24,5 @@ services:
       - OUTGOING_PORT=8111
 ```
 
+[ennisj/blobster-relay](https://hub.docker.com/r/ennisj/blobster-relay)
+
